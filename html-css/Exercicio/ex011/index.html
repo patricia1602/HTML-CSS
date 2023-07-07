@@ -16,6 +16,18 @@
         <source media="(max-width: 1000px )" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em    html5.</p>
+    <audio src="midia/chasing-neffex.mp3" controls autoplay></audio> <!--Esta forma ficou limitada--> <!-- MP3 WAV OGG -->
+    <br>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- usado para MP3-->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg"> <!-- Arquivos MP3 e OGG são mais compactos-->
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Evite arquivos wav porque são muito grandes e pesados-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a>
+    </audio>
 
 </body>
 </html>
+  
